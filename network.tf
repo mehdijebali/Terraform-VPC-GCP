@@ -1,5 +1,5 @@
 provider "google" {
-    credentials = file("service-demo-project-276314-b21400581d00.json")
+    credentials = file("packer-and-g-213-a488564e-d932ce3b657b.json")
 
     project = var.project
     region  = var.region
