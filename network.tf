@@ -1,5 +1,5 @@
 provider "google" {
-    credentials = file("packer-and-g-213-a488564e-d932ce3b657b.json")
+    # credentials = file("packer-and-g-213-a488564e-d932ce3b657b.json")
 
     project = var.project
     region  = var.region
@@ -45,7 +45,6 @@ module "vpc" {
 terraform {
   backend "gcs" {
     bucket = "terraform-state-file-01"
-    prefix = "terraform-practice"
-    credentials = file("packer-and-g-213-a488564e-d932ce3b657b.json")
+    prefix = "terraform/state"
   }
 }
