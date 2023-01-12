@@ -1,6 +1,6 @@
 variable project {
   type        = string
-  default     = "service-demo-project-276314"
+  default     = "packer-and-g-213-a488564e"
   description = "GCP Project ID"
 }
 

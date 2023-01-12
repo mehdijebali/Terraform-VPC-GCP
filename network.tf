@@ -1,6 +1,4 @@
 provider "google" {
-    # credentials = file("packer-and-g-213-a488564e-d932ce3b657b.json")
-
     project = var.project
     region  = var.region
     zone    = var.zone
@@ -23,7 +21,7 @@ module "vpc" {
         {
             subnet_name           = "subnet-02"
             subnet_ip             = var.subnet_02_ip
-            subnet_region         = "us-east2"
+            subnet_region         = "us-east1"
             subnet_private_access = "true"
             subnet_flow_logs      = "true"
             description           = "This is Subnet Two."
